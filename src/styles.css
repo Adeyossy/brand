@@ -1,4 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --brand-accent-color: #fa9302;
+  --brand-text-color: white;
+}
+
+body {
+  color: var(--brand-text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'ITC Avant Garde Pro Md', Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.brand-title {
+  font-size: 36px;
+}
+
+.brand-subtitle {
+  font-size: 18px;
 }
