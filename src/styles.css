@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --brand-accent-color: #fa9302;
+  --brand-primary-color: #fa9302;
+  --brand-primary-color-dark: rgb(76, 39, 2);
   --brand-text-color: white;
+  --brand-complementary-red: #f91c06;
+  --brand-complementary-yellow: #f2f20c;
+  --brand-background-light: rgb(31, 31, 31);
+  --brand-background-midtone: rgb(22, 22, 22);
+  --brand-background-dark: rgb(13, 13, 13);
 }
 
 body {
@@ -24,4 +30,8 @@ p {
 
 .brand-subtitle {
   font-size: 18px;
+}
+
+.brand-small-text {
+  font-size: 14px;
 }
