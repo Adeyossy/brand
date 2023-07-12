@@ -5,7 +5,7 @@
 }
 
 .brand-home-content {
-  height: 90vh;
+  height: 75vh;
 }
 
 .brand-avatar {
@@ -32,22 +32,23 @@ img.brand-avatar-image {
   box-shadow: inset 16px 16px 64px 16px rgba(0, 0, 0, 0.5),
     16px 16px 64px rgba(0, 0, 0, 0.9);
   height: 100%;
+  background-color: var(--brand-background-dark);
 }
 
 .brand-skill-web {
   background: url('../../../assets/code-slash.svg');
-  background-color: var(--brand-background-dark);
 }
 
 .brand-skill-data {
   background: url('../../../assets/bar-chart.svg');
+}
+
+.brand-skill.brand-skill-alternate {
   background-color: var(--brand-primary-color-dark);
 }
 
 .brand-skill p {
-  letter-spacing: 1px;
-  word-spacing: 1px;
-  opacity: 0.75;
+  opacity: 0.99;
 }
 
 .brand-data-icon {
@@ -68,4 +69,60 @@ img.brand-avatar-image {
 .brand-data-icon#icon-3 {
   height: 48px;
   background-color: var(--brand-complementary-yellow);
+}
+
+.brand-design-icons {
+  height: 64px;
+  margin: 32px 8px;
+}
+
+.brand-web-icons {
+  position: relative;
+  height: 64px;
+  margin: 32px 8px;
+}
+
+.brand-web-icon {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: white;
+  top: 0; bottom: 0;
+}
+
+.brand-web-icon#icon-1 {
+  background-color: var(--brand-primary-color);
+  left: 0; right: 16px;
+  margin: auto;
+}
+
+.brand-web-icon#icon-2 {
+  background-color: var(--brand-complementary-red);
+  left: 16px; right: 0;
+  margin: auto;
+}
+
+.brand-web-icon#icon-3 {
+  background-color: var(--brand-background-dark);
+  left: 0; right: 0;
+  margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .brand-home-content {
+    height: 80vh
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-home-content {
+    height: 85vh
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .brand-home-content {
+    height: 90vh
+  }
 }
