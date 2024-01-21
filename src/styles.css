@@ -5,6 +5,7 @@
   --brand-text-color: white;
   --brand-complementary-red: #f91c06;
   --brand-complementary-yellow: #f2f20c;
+  --brand-background-translucent: rgba(0, 0, 0, 0.5);
   --brand-background-light: rgb(31, 31, 31);
   --brand-background-midtone: rgb(22, 22, 22);
   --brand-background-dark: rgb(13, 13, 13);
@@ -46,4 +47,9 @@ p {
 
 .brand-complementary-yellow {
   color: var(--brand-complementary-yellow);
+}
+
+.brand-background-translucent {
+  background-color: var(--brand-background-translucent);
+  background-blend-mode: multiply;
 }
