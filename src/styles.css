@@ -3,6 +3,12 @@
   --brand-primary-color: #fa9302;
   --brand-primary-color-dark: rgb(56, 29, 2);
   --brand-text-color: white;
+  --brand-text-large: 30px;
+  --brand-text-medium: 24px;
+  --brand-text-regular: 18px;
+  --brand-text-small: 14px;
+  --brand-text-smaller: 12px;
+  --brand-text-smallest: 10px;
   --brand-complementary-red: #f91c06;
   --brand-complementary-yellow: #f2f20c;
   --brand-background-translucent: rgba(0, 0, 0, 0.35);
@@ -15,7 +21,12 @@ body {
   color: var(--brand-text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'ITC Avant Garde Pro Md', Arial, Helvetica, sans-serif;
   margin: 0;
 }
@@ -25,14 +36,19 @@ p {
   letter-spacing: 0.5px;
   word-spacing: 1px;
   margin: 0;
+  font-size: var(--brand-text-regular);
+}
+
+.brand-font-crimson {
+  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
 }
 
 .brand-title {
-  font-size: 36px;
+  font-size: var(--brand-text-large);
 }
 
 .brand-subtitle {
-  font-size: 24px;
+  font-size: var(--brand-text-medium);
 }
 
 .brand-small-text {
@@ -54,4 +70,15 @@ p {
 .brand-background-translucent {
   background-color: var(--brand-background-translucent);
   background-blend-mode: overlay;
+}
+
+@media only screen and (min-width: 924px) {
+  :root {
+    --brand-text-large: 36px;
+    --brand-text-medium: 30px;
+    --brand-text-regular: 24px;
+    --brand-text-small: 21px;
+    --brand-text-smaller: 18px;
+    --brand-text-smallest: 16px;
+  }
 }
