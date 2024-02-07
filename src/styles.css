@@ -5,7 +5,7 @@
   --brand-text-color: white;
   --brand-complementary-red: #f91c06;
   --brand-complementary-yellow: #f2f20c;
-  --brand-background-translucent: rgba(0, 0, 0, 0.5);
+  --brand-background-translucent: rgba(0, 0, 0, 0.35);
   --brand-background-light: rgb(31, 31, 31);
   --brand-background-midtone: rgb(22, 22, 22);
   --brand-background-dark: rgb(13, 13, 13);
@@ -21,7 +21,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 0.2px;
+  word-spacing: 0.5px;
   margin: 0;
 }
 
@@ -51,5 +53,5 @@ p {
 
 .brand-background-translucent {
   background-color: var(--brand-background-translucent);
-  background-blend-mode: multiply;
+  background-blend-mode: overlay;
 }
