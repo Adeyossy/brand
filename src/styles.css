@@ -5,7 +5,7 @@
   --brand-text-color: white;
   --brand-text-large: 30px;
   --brand-text-medium: 24px;
-  --brand-text-regular: 18px;
+  --brand-text-regular: 16px;
   --brand-text-small: 14px;
   --brand-text-smaller: 12px;
   --brand-text-smallest: 10px;
@@ -15,6 +15,9 @@
   --brand-background-light: rgb(31, 31, 31);
   --brand-background-midtone: rgb(22, 22, 22);
   --brand-background-dark: rgb(13, 13, 13);
+  --brand-spacing-large: 24px;
+  --brand-spacing-default: 16px;
+  --brand-spacing-small: 8px;
 }
 
 body {
@@ -31,16 +34,36 @@ h6 {
   margin: 0;
 }
 
-p {
+p, label {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: 0.5px;
-  word-spacing: 1px;
   margin: 0;
   font-size: var(--brand-text-regular);
 }
 
+hr {
+  color: var(--brand-primary-color);
+}
+
+button {
+  border: 3px solid var(--brand-text-color);
+  padding: 16px 36px;
+  background-color: transparent;
+  color: var(--brand-text-color);
+  font-family: 'ITC Avant Garde Pro Md', Arial, Helvetica, sans-serif;
+  font-size: var(--brand-text-small);
+  transition: background-color 200ms ease, border-color 200ms ease;
+}
+
 .brand-font-crimson {
   font-family: 'Crimson Text', Georgia, 'Times New Roman', Times, serif;
+}
+
+.brand-spacing-default {
+  padding: var(--brand-spacing-default);
+}
+
+.brand-spacing-default-width {
+  padding: 0px var(--brand-spacing-default);
 }
 
 .brand-title {
@@ -52,7 +75,7 @@ p {
 }
 
 .brand-small-text {
-  font-size: 21px;
+  font-size: var(--brand-text-small);
 }
 
 .brand-primary-color {
@@ -72,13 +95,23 @@ p {
   background-blend-mode: overlay;
 }
 
+@media only screen and (min-width: 768px) {
+  button:hover {
+    background-color: var(--brand-primary-color);
+    border-color: var(--brand-primary-color-dark);
+  }
+}
+
 @media only screen and (min-width: 924px) {
   :root {
     --brand-text-large: 36px;
-    --brand-text-medium: 30px;
-    --brand-text-regular: 24px;
-    --brand-text-small: 21px;
-    --brand-text-smaller: 18px;
-    --brand-text-smallest: 16px;
+    --brand-text-medium: 28px;
+    --brand-text-regular: 21px;
+    --brand-text-small: 18px;
+    --brand-text-smaller: 16px;
+    --brand-text-smallest: 14px;
+    --brand-spacing-large: 64px;
+    --brand-spacing-default: 48px;
+    --brand-spacing-small: 24px;
   }
 }
